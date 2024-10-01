@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "tigaLogo.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
