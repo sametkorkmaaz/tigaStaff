@@ -100,6 +100,3 @@ class TabbarController: UITabBarController {
         return path
     }
 }
-#Preview() {
-    TabbarController()
-}

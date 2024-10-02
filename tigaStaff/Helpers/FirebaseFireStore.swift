@@ -9,7 +9,15 @@ import Foundation
 import FirebaseFirestore
 
 // Firestore erişimi için singleton sınıfı
-class FirebaseFireStore {
+protocol FirebaseFireStoreInterface {
+    
+    func fetchTigaNews(from collectionName: String, completion: @escaping ([NewsModel]?, Error?) -> Void)
+    func saveUserFirestore(collectionName: String, userName: String, userLastName: String, dateOfBirth: String, userGender: String, userRole: String, userEmail: String, completion: @escaping (Error?) -> Void) async
+    func fetchTigaUsers(completion: @escaping ([UserModel]?, Error?) -> Void)
+    func fetchTigaUserWithUserEmail(email: String, completion: @escaping (UserModel?, Error?) -> Void)
+}
+
+class FirebaseFireStore: FirebaseFireStoreInterface {
     
     static let shared = FirebaseFireStore() // Singleton
     

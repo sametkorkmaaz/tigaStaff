@@ -28,6 +28,14 @@ final class SignInViewModel {
     var userGender = ""
     var userDateOfBirth = ""
     
+    private let authManager: FirebaseAuthManagerInterface
+    private let firestoreManager: FirebaseFireStoreInterface
+    
+    init(authManager: FirebaseAuthManagerInterface = FirebaseAuthManager.shared, firestoreManager: FirebaseFireStoreInterface = FirebaseFireStore.shared) {
+        self.authManager = authManager
+        self.firestoreManager = firestoreManager
+    }
+    
 }
 
 extension SignInViewModel: SignInViewModelInterface{
@@ -47,8 +55,8 @@ extension SignInViewModel: SignInViewModelInterface{
         
         Task {
             do{
-                let returnedUserData = try await FirebaseAuthManager.shared.createUser(email: email, password: password)
-                await FirebaseFireStore.shared.saveUserFirestore(collectionName: "users", userName: userName, userLastName: userLastName, dateOfBirth: userDateOfBirth, userGender: userGender, userRole: userRole, userEmail: email) { error in
+                let returnedUserData = try await authManager.createUser(email: email, password: password)
+                await firestoreManager.saveUserFirestore(collectionName: "users", userName: userName, userLastName: userLastName, dateOfBirth: userDateOfBirth, userGender: userGender, userRole: userRole, userEmail: email) { error in
                     print("Kullanıcı fireströde kaydedilemedi")
                 }
                 print(returnedUserData)
