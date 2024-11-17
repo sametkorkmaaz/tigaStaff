@@ -1,6 +1,7 @@
-<h1 align=center> 🛫🏩 </h1> 
+<h1 align=center> Company Employees 👩🏻‍💻👨🏼‍💻</h1> 
 
-Deneme deneme
+Bu projemde Ankara'da bulunan teknoloji şirketlerinden biri olan Tiga'nın web sitelerinden aldığım bilgiler ile bir iOS mobil uygulama geliştirdim. Firebase Authentication özellikleri ile kullanıcı üye olma ve giriş yapma ekranlarını tasarladım. Bunun yanında Firebase Remote Config sayesinde splash ekranı ve ana sayfada bulunan Adem Bey'den mesaj var bölümlerini uygulamaya güncelleme yapmak gerekmeden Firebase üzerinden güncelleme yapılıyor. Uygulama kullanım detaylarına aşağıda bıraktığım videodan erişebilirsiniz.
+
 ## Kullandığım Teknolojiler
 + MVVM Architecture ✅
 + Protocol Oriented Programming ✅
