@@ -16,5 +16,5 @@ Bu projemde Ankara'da bulunan teknoloji şirketlerinden biri olan Tiga'nın web 
 + Swift Package Manager ✅
 
 ## :movie_camera: Uygulama ekran kaydını aşağıdaki görsele tıklayarak izleyebilirsiniz
-[![IMAGE ALT TEXT HERE](https://i9.ytimg.com/vi/5G4FkjWRqMg/mqdefault.jpg?v=66fd19b2&sqp=COjG6LkG&rs=AOn4CLBZw0T-h52uPlOP5YDJskX6i9ahHg)](https://youtu.be/5G4FkjWRqMg)
+[![IMAGE ALT TEXT HERE](https://tigavakfi.org/favicon.png)](https://youtu.be/5G4FkjWRqMg)
 
